@@ -32,6 +32,8 @@ jobs:
         run: npm install -g mystmd
 
       - name: Construir el libro
+        env:
+          BASE_URL: /Machine_Learning/
         run: myst build --html
 
       - name: Configurar GitHub Pages
