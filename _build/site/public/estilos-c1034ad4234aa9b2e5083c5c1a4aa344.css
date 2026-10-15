@@ -1,0 +1,20 @@
+/* Fotografía del autor en la barra lateral izquierda */
+
+@media (min-width: 1024px) {
+
+  nav.myst-primary-sidebar-toc::before {
+    content: "";
+    display: block;
+
+    width: 90%;
+    height: 330px;
+
+    margin: 10px auto 25px auto;
+
+    background-image: url("/images/zamora.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+}
