@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 128" width="400" height="246">
-  <!-- Borde redondeado exterior en color azul -->
-  <rect x="10" y="10" width="188" height="108" rx="16" ry="16" fill="none" stroke="#007AFF" stroke-width="16" />
-  
-  <!-- Letra 'M' y flecha hacia abajo en color azul -->
-  <path fill="#007AFF" d="M32 96 v-64 h20 l20 25 l20 -25 h20 v64 h-20 v-37 l-20 25 l-20 -25 v37 h-20 z" />
-  <path fill="#007AFF" d="M154 96 l-28 -31 h18 v-33 h20 v33 h18 l-28 31 z" />
-</svg>

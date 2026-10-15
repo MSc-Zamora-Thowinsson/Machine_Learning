@@ -1,1 +1,0 @@
-# Capítulo 0. Preparación del entorno de trabajo
