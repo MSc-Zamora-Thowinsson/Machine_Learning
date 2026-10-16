@@ -473,9 +473,9 @@ El sistema te mostrará el modelo del procesador y su arquitectura:
 Miniconda es una distribución ligera que incorpora Python, Conda y los componentes esenciales para administrar entornos de trabajo independientes.
 Descargue desde su sitio oficial Miniconda y seleccione el instalador correspondiente a la arquitectura identificada anteriormente.
 
-#### Instalar Miniconda en Mac
+#### Instalar Miniconda en Mac ![Logo Mac](images/images-svg/Apple-Logo.svg)
 
-1. Visita la página [de descarga de Miniconda](https://continuumio-docs.readthedocs-hosted.com/miniconda/install/#quick-command-line-install) y luego selecciona la **64-bit (Apple silicon) Graphical Installeropción** correspondiente. Se descargará un `.pkg`  instalador. 
+1. Visita la página [de descarga de Miniconda](https://continuumio-docs.readthedocs-hosted.com/miniconda/install/#quick-command-line-install) y luego selecciona la **64-bit (Apple silicon) Graphical Installeropción** correspondiente. Se descargará un `.pkg`  instalador.
 
 ![Paso 1](images/mac-images/1.png)
 
@@ -522,6 +522,65 @@ conda info
 Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistema.
 
 ![Conda Info](images/mac-images/conda-info.png)
+
+#### Instalar Miniconda en Windows ![Logo Windows](images/images-svg/Windows-Logo.svg)
+
+1. Visita la página [de descarga de Miniconda](https://www.anaconda.com/download/success?reg=skipped-miniconda) y selecciona  **Windows 64-Bit (x86_64) Graphical Installer** correspondiente. Se descargará un archivo de instalación `.exer`.
+
+![Paso 1](images/windows-images/1.png)
+
+2. Una vez descargado, ejecuta el instalador haciendo doble clic en él. Haz clic en *Siguiente.*
+
+![Paso 2](images/windows-images/2.png)
+
+3. Lee los términos de condiciones y haz clic en *Acepto* ellos.
+
+![Paso 3](images/windows-images/3.png)
+
+4. Selecciona la opción *Just Me* (recomendado) para la instalación y Haz clic en *Siguiente*.
+
+![Paso 4](images/windows-images/4.png)
+
+5. Para elegir ubicación de instalación, puedes mantener el valor predeterminado directorio sugerido como la Carpeta de Destino. Haz clic en Siguiente
+
+>[!note]
+> Si tu nombre de usuario contiene espacios o caracteres especiales, algunos paquetes podrían presentar problemas. En ese caso, elige una ruta sencilla como `C:\miniconda3`.
+
+![Paso 5](images/windows-images/5.png)
+
+6. Configura las opciones avanzadas y haz clic en Instalar. Marca estas dos casillas:
+
+✅ Agregar Miniconda3 a mi variable de entorno PATH
+
+✅ Registrar Miniconda3 como mi Python 3 predeterminado
+
+![Paso 6](images/windows-images/6.png)
+
+7. Cuando termine la instalación, haz clic en Finalizar.
+
+![Paso 7](images/windows-images/7.png)
+
+8. Tu instalación está completa, pero necesitamos verificarla y Configura algunos ajustes. Abre un *nuevo prompt de Powershell de Anaconda* desde el menú de inicio.
+
+![Paso 8](images/windows-images/8.png)
+
+9. La instalación ha finalizado, pero faltan ajustes. Abre desde el menú Inicio el **Anaconda PowerShell Prompt** (se abrirá con el entorno `base` activo).
+
+```bash
+conda init powershell
+```
+
+![Paso 9](images/windows-images/9.png)
+
+10. Por último, acepta los Términos de Servicio de Anaconda:
+
+```bash
+conda tos accept
+```
+
+![Paso 10](images/windows-images/10.png)
+
+Tu instalación ya está completa.
 
 ### 0.3.4. Creación del entorno de Machine Learning
 
