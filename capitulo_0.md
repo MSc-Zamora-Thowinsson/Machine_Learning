@@ -1,4 +1,4 @@
-# Preparación del entorno de trabajo
+# Módulo 0. Preparación del entorno de trabajo
 
 ## Introducción
 
@@ -428,12 +428,50 @@ En el caso de **Windows**, la gran mayoría de equipos de escritorio y portátil
 ```{note} En Windows puedes identificar la arquitectura de dos formas: de manera gráfica o mediante comandos.
 ```
 
-En **Linux**, la arquitectura depende del dispositivo: en computadores de escritorio, portátiles y servidores tradicionales lo habitual es **x86_64** (Intel/AMD), mientras que en Raspberry Pi, servidores ARM (como AWS Graviton) o máquinas virtuales sobre Apple Silicon se usa **ARM64** (también llamada **aarch64**).
+**Método gráfico:** Ejecute los siguientes pasos:
+
+1. Haz clic en el icono de **Inicio** y selecciona **Configuración**.
+
+![Paso 1](images/windows-images/terminal/1.png)
+
+2. Selecciona la opción **Sistema.**
+
+![Paso 2](images/windows-images/terminal/2.png)
+
+3. Desplázate hacia abajo hasta encontrar **Acerca de (o Información del sistema).**
+
+![Paso 3](images/windows-images/terminal/3.png)
+
+4. Allí se mostrará la arquitectura de tu equipo en el campo **Tipo de sistema.**
+
+![Paso 4](images/windows-images/terminal/4.png)
+
+**Método terminal**
+
+>[!Note]
+> Para abrir PowerShell, presiona las teclas **Windows (⊞) + R** para abrir el cuadro **Ejecutar**, escribe `powershell` y presiona **Enter**. Se abrirá la ventana de PowerShell.
+
+![Ejecutar](images/windows-images/terminal/Ejecutar.png)
+
+![Power Shell Vacio](images/windows-images/terminal/Terminal-Vacio.png)
+
+Eecuta el siguiente comando:
+
+````bash
+Get-CimInstance Win32_Processor | Select-Object Name, Architecture
+````
+
+![Paso unico](images/windows-images/terminal/Terminal.png)
+
+El sistema te mostrará el modelo del procesador y su arquitectura:
+
+**Architecture** = 9 → Intel/AMD de 64 bits → descarga versiones **x64 / x86_64 / amd64**
+**Architecture** = 12 → ARM64 → descarga versión **ARM64**
 
 ### 0.3.3. Instalación de Miniconda
 
 Miniconda es una distribución ligera que incorpora Python, Conda y los componentes esenciales para administrar entornos de trabajo independientes.
-Descargue desde su sitio oficial Miniconda y seleccione el instalador correspondiente a la arquitectura identificada anteriormente. 
+Descargue desde su sitio oficial Miniconda y seleccione el instalador correspondiente a la arquitectura identificada anteriormente.
 
 #### Instalar Miniconda en Mac
 
