@@ -343,9 +343,9 @@ En este curso, Git y GitHub cumplirán tres funciones:
 
 Una consideración práctica: los notebooks `.ipynb` almacenan resultados e imágenes dentro del archivo, por lo que sus cambios son más difíciles de leer en el historial de Git que los de un `.md`. Por ello se recomienda versionar preferentemente los archivos en texto plano y limpiar las salidas de los notebooks antes de cada *commit*.
 
-#### Integración con VS Code
+#### Integración con Visual Studio Code
 
-VS Code incluye soporte nativo para Git: desde su interfaz es posible ver los archivos modificados, comparar cambios, crear *commits*, gestionar ramas y sincronizar el repositorio con GitHub, sin necesidad de usar la línea de comandos para las operaciones básicas.
+Visual Studio Code incluye soporte nativo para Git: desde su interfaz es posible ver los archivos modificados, comparar cambios, crear *commits*, gestionar ramas y sincronizar el repositorio con GitHub, sin necesidad de usar la línea de comandos para las operaciones básicas.
 
 ## 0.2. Arquitectura general del entorno
 
@@ -477,27 +477,27 @@ Descargue desde su sitio oficial Miniconda y seleccione el instalador correspond
 
 1. Visita la página [de descarga de Miniconda](https://continuumio-docs.readthedocs-hosted.com/miniconda/install/#quick-command-line-install) y luego selecciona la **64-bit (Apple silicon) Graphical Installer opción** correspondiente. Se descargará un `.pkg`  instalador.
 
-![Paso 1](images/mac-images/1.png)
+![Paso 1](images/mac-images/miniconda/1.png)
 
 2. Una vez descargado, ejecute el instalador con doble clic sobre él. Clic en *Continuar.*
 
-![Paso 2](images/mac-images/2.2.png)
+![Paso 2](images/mac-images/miniconda/2.2.png)
 
 3. Lea los términos y condiciones y haga clic en *Aceptar*.
 
-![Paso 3](images/mac-images/3.1.png)
+![Paso 3](images/mac-images/miniconda/3.1.png)
 
 4. Confirme la ubicación de instalación y haga clic en *Continuar*
 
-![Paso 4](images/mac-images/4.1.png)
+![Paso 4](images/mac-images/miniconda/4.1.png)
 
 5. Espere a que finalice la instalación y, a continuación, haga clic en *Cerrar*
 
-![Paso 5](images/mac-images/5.1.png)
+![Paso 5](images/mac-images/miniconda/5.1.png)
 
 6. Abra una nueva ventana de *terminal*. Si la instalación se realizó correctamente, la terminal se iniciará sin errores y mostrará tu `base` entorno activado por defecto.
 
-![Paso 6](images/mac-images/6.png)
+![Paso 6](images/mac-images/miniconda/6.png)
 
 7. Ejecute el siguiente comando para aceptar los [Términos de Servicio (ToS)](https://www.anaconda.com/legal) de Anaconda
 
@@ -505,7 +505,7 @@ Descargue desde su sitio oficial Miniconda y seleccione el instalador correspond
 conda tos accept
 ````
 
-![Paso 7](images/mac-images/7.png)
+![Paso 7](images/mac-images/miniconda/7.png)
 
 Una vez finalizada la instalación, cierre y abra nuevamente la Terminal. Compruebe que Conda está disponible mediante:
 
@@ -521,32 +521,32 @@ conda info
 
 Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistema.
 
-![Conda Info](images/mac-images/conda-info.png)
+![Conda Info](images/mac-images/miniconda/conda-info.png)
 
 #### Instalar Miniconda en Windows ![Logo Windows](images/images-svg/Windows-Logo.svg)
 
 1. Visita la página [de descarga de Miniconda](https://www.anaconda.com/download/success?reg=skipped-miniconda) y selecciona  **Windows 64-Bit (x86_64) Graphical Installer** correspondiente. Se descargará un archivo de instalación `.exer`.
 
-![Paso 1](images/windows-images/1.png)
+![Paso 1](images/windows-images/miniconda/1.png)
 
 2. Una vez descargado, ejecuta el instalador haciendo doble clic en él. Haz clic en *Siguiente.*
 
-![Paso 2](images/windows-images/2.png)
+![Paso 2](images/windows-images/miniconda/2.png)
 
 3. Lee los términos y condiciones y haz clic en *Acepto*.
 
-![Paso 3](images/windows-images/3.png)
+![Paso 3](images/windows-images/miniconda/3.png)
 
 4. Selecciona la opción *Just Me* (recomendado) para la instalación y haz clic en *Siguiente*.
 
-![Paso 4](images/windows-images/4.png)
+![Paso 4](images/windows-images/miniconda/4.png)
 
 5. Para elegir ubicación de instalación, puedes mantener el directorio predeterminado sugerido como la Carpeta de Destino. Haz clic en Siguiente
 
 >[!note]
 > Si tu nombre de usuario contiene espacios o caracteres especiales, algunos paquetes podrían presentar problemas. En ese caso, elige una ruta sencilla como `C:\miniconda3`.
 
-![Paso 5](images/windows-images/5.png)
+![Paso 5](images/windows-images/miniconda/5.png)
 
 6. Configura las opciones avanzadas y haz clic en Instalar. Marca estas dos casillas:
 
@@ -554,15 +554,15 @@ Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistem
 
 ✅ Registrar Miniconda3 como mi Python 3 predeterminado
 
-![Paso 6](images/windows-images/6.png)
+![Paso 6](images/windows-images/miniconda/6.png)
 
 7. Cuando termine la instalación, haz clic en Finalizar.
 
-![Paso 7](images/windows-images/7.png)
+![Paso 7](images/windows-images/miniconda/7.png)
 
 8. Tu instalación está completa, pero necesitamos verificarla y configurar algunos ajustes. Abre un *nuevo prompt de PowerShell de Anaconda* desde el menú de inicio.
 
-![Paso 8](images/windows-images/8.png)
+![Paso 8](images/windows-images/miniconda/8.png)
 
 9. La instalación ha finalizado, pero faltan ajustes. Abre desde el menú Inicio el **Anaconda PowerShell Prompt** (se abrirá con el entorno `base` activo).
 
@@ -570,7 +570,7 @@ Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistem
 conda init powershell
 ```
 
-![Paso 9](images/windows-images/9.png)
+![Paso 9](images/windows-images/miniconda/9.png)
 
 10. Por último, acepta los Términos de Servicio de Anaconda:
 
@@ -578,7 +578,7 @@ conda init powershell
 conda tos accept
 ```
 
-![Paso 10](images/windows-images/10.png)
+![Paso 10](images/windows-images/miniconda/10.png)
 
 Tu instalación ya está completa.
 
