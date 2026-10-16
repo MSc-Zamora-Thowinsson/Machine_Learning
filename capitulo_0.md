@@ -383,7 +383,7 @@ Dentro de esta rama específica de la inteligencia artificial, el entorno tiene 
 
 - **Herramientas comunes:** Entornos virtuales (`venv` en **Python**, `renv` en **R**), Anaconda/Miniconda, o contenedores de Docker.
 
-#### 0.3.1.1. Entorno en Conda
+#### Entorno en Conda
 
 Un entorno de Conda es un espacio de trabajo aislado (un directorio en tu computadora) que contiene una versión específica de un lenguaje de programación y una colección exacta de paquetes y dependencias. Es creado y gestionado por Conda, un sistema de gestión de paquetes y entornos de código abierto.
 
@@ -582,7 +582,73 @@ conda tos accept
 
 Tu instalación ya está completa.
 
-### 0.3.4. Creación del entorno de Machine Learning
+### 0.3.4. Configuración de Visual Studio Code ![Logo Vs Code](images/images-svg/VsCode-Logo.svg)
+
+**Visual Studio Code (VS Code)** será el entorno principal de desarrollo utilizado en este módulo. Con la extensión de Python, se convierte en un IDE ligero y versátil para el desarrollo de Python orientado a machine learning.
+
+#### Instalar Visual Studio Code en macOS ![Logo Mac](images/images-svg/Apple-Logo.svg)
+
+1. Visita la página oficial de [Vs Code](https://code.visualstudio.com/download/)
+Una vez instalado
+
+![Paso 1](images/mac-images/images-VsCode/1.png)
+
+2. En la sección macOS, haz clic en el botón de descarga Universal. Esta versión funciona tanto en Mac con procesador Intel como en equipos con chip Apple Silicon (M1, M2, M3, M4 y posteriores).
+
+>[!note]
+> Si prefieres descargar solo la arquitectura específica, en la misma página encontrarás por separado las versiones **Intel Chip** y **Apple Silicon**. La opción **Universal** incluye ambas y es la recomendada.
+
+3. Una vez completada la descarga, obtendrás un archivo `VSCode-darwin-arm64.dmg`
+
+4. Haz doble clic sobre el archivo `.dmg` para abrirlo y, en la ventana que aparece, arrastra el icono de Visual Studio Code hasta la carpeta Aplicaciones.
+
+![Paso 2](images/mac-images/images-VsCode/2.png)
+
+5. Al abrir Visual Studio Code por primera vez, macOS mostrará una ventana de advertencia indicando que la aplicación se ha descargado de Internet. Haz clic en Abrir (o Open si tu sistema está en inglés) para confirmar. Una vez que aceptes, macOS recordará tu elección y no volverá a mostrar este aviso para VS Code.
+
+![Paso 3](images/mac-images/images-VsCode/3.png)
+
+6. Cuando se inicie VS Code, verás la interfaz limpia con una sección de "Iniciar" que te permite abrir carpetas, crear nuevos archivos o clonar repositorios de Git.
+
+![Paso 4](images/mac-images/images-VsCode/4.png)
+
+#### Activar el comando 'code' en Terminal
+
+Una de las funcionalidades más útiles de VS Code es la posibilidad de abrir cualquier carpeta directamente desde la terminal mediante el comando `code`. Para poder usarlo, primero debes habilitarlo:
+
+1. Abre VS Code.
+
+2. Abre la paleta de comandos: *Cmd + Shift + P (macOS).*
+
+````bash
+⇧ + ⌘ + P
+````
+
+![Paso 5](images/mac-images/images-VsCode/5.png)
+
+3. Escribe `shell command` y selecciona **Shell Command: Install 'code' command in PATH.**
+
+![Paso 6](images/mac-images/images-VsCode/6.png)
+
+4. El sistema le pedira autenticación.
+
+![Paso 7](images/mac-images/images-VsCode/7.png)
+
+![Paso 8](images/mac-images/images-VsCode/8.png)
+
+5. Cierra y vuelve a abrir la terminal.
+
+```bash
+code .
+```
+
+![Paso 8](images/mac-images/images-VsCode/9.png)
+
+Este comando abre el directorio actual en VS Code un atajo muy útil para desarrolladores que trabajan con varios proyectos.
+
+#### Instalar Visual Studio Code en Windows. ![Logo de Windows](images/images-svg/Windows-Logo.svg)
+
+### 0.3.5. Creación del entorno de Machine Learning
 
 Las bibliotecas utilizadas durante el curso no se instalarán directamente en el entorno base. Se creará un entorno independiente denominado ml_machine.
 
@@ -626,7 +692,7 @@ which python
 
 La ruta obtenida deberá corresponder al entorno `ml_machine`.
 
-### 0.3.5. Instalación de Jupyter
+### 0.3.6. Instalación de Jupyter
 
 Con el entorno `ml_machine` activado, instale Jupyter y el kernel de Python:
 
@@ -648,7 +714,7 @@ jupyter --version
 
 El kernel `Python (ml_machine)` podrá seleccionarse posteriormente desde los notebooks utilizados durante el curso.
 
-### 0.3.6. Instalación de las bibliotecas fundamentales
+### 0.3.7. Instalación de las bibliotecas fundamentales
 
 El entorno inicial incorporará las principales bibliotecas necesarias para análisis de datos, visualización y construcción de modelos básicos:
 
@@ -664,34 +730,6 @@ Estas bibliotecas cumplen funciones diferentes dentro del flujo de trabajo:
 - scikit-learn: preprocesamiento, entrenamiento, validación y evaluación de modelos de Machine Learning.
 Las bibliotecas especializadas, como XGBoost, LightGBM, CatBoost y SHAP, se incorporarán posteriormente cuando sean necesarias.
 
-### 0.3.7. Configuración de Visual Studio Code
-
-**Visual Studio Code (VS Code)** será el entorno principal de desarrollo utilizado en este libro.
-
-Una vez instalado, abra el panel Extensions e instale las extensiones oficiales:
-
-- Python
-- Jupyter
-
-Posteriormente, abra la paleta de comandos mediante:
-
-````
-⇧ + ⌘ + P
-````
-
-Busque:
-
-> `Python: Select Interpreter`
-
-Seleccione el intérprete correspondiente al entorno:
-
-> `ml_machine`
-
-Cuando trabaje con un notebook `(.ipynb)`, seleccione igualmente el kernel:
-
-> `Python (ml_machine)`
-
-De esta manera, VS Code y Jupyter utilizarán el mismo entorno y las mismas dependencias del proyecto.
 
 ### 0.3.8. Verificación integral del entorno
 

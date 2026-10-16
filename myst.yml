@@ -24,6 +24,9 @@ project:
     - file: intro.md
     - file: capitulo_0.md
     - file: capitulo_1.md
+    - file: capitulo_2a.md
+    - file: capitulo_2b.md
+    - file: capitulo_2c.md
     - file: sobre el autor.md
     
 site:
