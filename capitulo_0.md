@@ -648,6 +648,75 @@ Este comando abre el directorio actual en VS Code un atajo muy útil para desarr
 
 #### Instalar Visual Studio Code en Windows. ![Logo de Windows](images/images-svg/Windows-Logo.svg)
 
+1. **Descargar el instalador:** Entra a la página oficial [vs-code](https://code.visualstudio.com/Download) selecciona la versión para **Windows** (64 bits). Se descargará una archivo de instalación `.exe`.
+
+![Paso 1](images/windows-images/vs-code/1.png)
+
+2. **Aceptar el acuerdo de licencia:** Ejecuta el instalador descargado. Selecciona la opción *Acepto el acuerdo* y haz clic en **Siguiente.**
+
+![Paso 2](images/windows-images/vs-code/2.png)
+
+3. **Elegir carpeta de instalación:** Puedes mantener la ruta que aparece por defecto. Haz clic en **Siguiente**.
+
+>[!note]
+>Si tu nombre de usuario tiene espacios o caracteres especiales, puedes instalarlo en una ruta más sencilla como C:\VSCode para evitar problemas.
+
+![Paso 3](images/windows-images/vs-code/3.png)
+
+4. **Menú Inicio:** Deja el nombre tal como aparece y pulsa **Siguiente.**
+
+![Paso 4](images/windows-images/vs-code/4.png)
+
+5. **Tareas adicionales (recomendado marcar TODO):** Marca todas las casillas como se muestra en la imagen:
+
+![Paso 5](images/windows-images/vs-code/5.png)
+
+![Paso 6](images/windows-images/vs-code/6.png)
+
+| **Opción** | **Qué hace** |
+|---|---|
+| ✅ Crear un acceso directo en el escritorio | Acceso rápido desde el escritorio |
+| ✅ Agregar "Abrir con Code" al menú de archivos | Clic derecho → abrir en VS Code |
+| ✅ Agregar "Abrir con Code" al menú de carpetas | Abrir carpetas completas con clic derecho |
+| ✅ Registrar Code como editor predeterminado | Archivos de código se abren aquí al hacer doble clic |
+| ✅ Agregar a PATH | Permite usar el comando `code` desde la terminal/PowerShell |
+
+6. **Confirmar instalación:** Revisa el resumen y pulsa **Instalar.**
+
+![Paso 7](images/windows-images/vs-code/7.png)
+
+7. **Instalando…**
+
+![Paso 8](images/windows-images/vs-code/8.png)
+
+8. **Finalizar:** Cuando termine, pulsa **Finalizar.** La casilla *"Ejecutar Visual Studio Code"* viene marcada por defecto: al cerrar, se abrirá automáticamente.
+
+![Paso 9](images/windows-images/vs-code/9.png)
+
+9. **Abrir VS Code:** Si no se abre solo, búscalo así:
+
+1) Pulsa el botón de **Inicio**
+2) Escribe code
+3) Selecciona **Visual Studio Code** → **Abrir**
+
+![Paso 10](images/windows-images/vs-code/10.png)
+
+10. **Pantalla de bienvenida.** Al abrirlo verás la pantalla de bienvenida. Ahora instalamos las extensiones necesarias:
+
+1) Pulsa el icono de Extensiones en la barra lateral izquierda 🧩
+2) Busca e instala:
+
+      - **Python** → soporte completo para Python
+      - **Jupyter** → para trabajar con cuadernos `.ipynb`
+
+![Paso 11](images/windows-images/vs-code/11.png)
+
+![Paso 12](images/windows-images/vs-code/12.png)
+
+![Paso 13](images/windows-images/vs-code/13.png)
+
+![Paso 14](images/windows-images/vs-code/14.png)
+
 ### 0.3.5. Creación del entorno de Machine Learning
 
 Las bibliotecas utilizadas durante el curso no se instalarán directamente en el entorno base. Se creará un entorno independiente denominado ml_machine.
