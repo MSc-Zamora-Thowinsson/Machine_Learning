@@ -30,12 +30,12 @@ Al terminar esta parte usted será capaz de:
 :class: tip
 En el **Módulo 1** vimos *qué es* el aprendizaje automático y su **taxonomía** (supervisado, no supervisado, etc.). Aquí **no repetimos esa teoría**: la usamos como mapa. Si en algún momento no recuerda la diferencia entre supervisado y no supervisado, vuelva al Módulo 1. Este módulo es el **taller de modelos**: abrimos la caja de herramientas y vemos para qué sirve cada una.
 
-Este Módulo 3 está dividido en tres partes que se leen en orden: **3A** (qué es cada modelo), **3B** (compararlos y conocer las librerías) y **3C** (practicar y ejercitar). La numeración de secciones (3.1, 3.2, …) es continua entre las tres partes.
+Este Módulo 2 está dividido en tres partes que se leen en orden: **2A** (qué es cada modelo), **2B** (compararlos y conocer las librerías) y **2C** (practicar y ejercitar). La numeración de secciones (2.1, 2.2, …) es continua entre las tres partes.
 ```
 
 ---
 
-## 3.1 Primero lo primero: ¿qué es "un modelo"?
+## 2.1 Primero lo primero: ¿qué es "un modelo"?
 
 Imagine que le entregan miles de recibos de nómina y le piden una "fórmula" para estimar el salario de un empleado nuevo a partir de su edad, sus años de experiencia y su cargo. Usted, a mano, observaría patrones: "a más experiencia, más salario"; "los cargos directivos pagan más". Al final tendría una especie de **regla** que convierte datos de entrada (edad, experiencia, cargo) en una salida (salario estimado).
 
@@ -61,7 +61,7 @@ flowchart LR
 
 ---
 
-## 3.2 Mapa de los modelos que veremos
+## 2.2 Mapa de los modelos que veremos
 
 Antes de entrar uno por uno, este es el mapa completo. Guárdelo: cada modelo del módulo ocupa un lugar aquí.
 
@@ -88,7 +88,7 @@ flowchart TD
 
 ---
 
-## 3.3 Los modelos supervisados, uno por uno
+## 2.3 Los modelos supervisados, uno por uno
 
 Recuerde del Módulo 1: **supervisado** significa que en los datos de entrenamiento ya conocemos la respuesta correcta (la "etiqueta"). El modelo aprende de esos ejemplos resueltos. Hay dos sabores:
 
@@ -97,7 +97,7 @@ Recuerde del Módulo 1: **supervisado** significa que en los datos de entrenamie
 
 Veamos cada familia con su tarjeta: *idea en una frase → analogía → cómo piensa → cuándo sí y cuándo no → código mínimo*.
 
-### 3.3.1 Regresión lineal
+### 2.3.1 Regresión lineal
 
 **Idea en una frase:** traza la "mejor línea recta" que pasa por una nube de puntos para predecir un número.
 
@@ -121,7 +121,7 @@ modelo.fit(X_train, y_train)      # aprende los pesos
 y_pred = modelo.predict(X_test)   # predice números
 ```
 
-### 3.3.2 Regresión logística (ojo: sirve para CLASIFICAR)
+### 2.3.2 Regresión logística (ojo: sirve para CLASIFICAR)
 
 **Idea en una frase:** parecida a la lineal, pero en vez de un número devuelve una **probabilidad** de pertenecer a una clase.
 
@@ -146,7 +146,7 @@ y_pred  = modelo.predict(X_test)        # la clase
 y_proba = modelo.predict_proba(X_test)  # la probabilidad de cada clase
 ```
 
-### 3.3.3 k vecinos más cercanos (k-NN)
+### 2.3.3 k vecinos más cercanos (k-NN)
 
 **Idea en una frase:** para decidir sobre un caso nuevo, mira los ejemplos más parecidos que ya conoce y copia su respuesta.
 
@@ -165,7 +165,7 @@ modelo.fit(X_train, y_train)
 y_pred = modelo.predict(X_test)
 ```
 
-### 3.3.4 Árbol de decisión
+### 2.3.4 Árbol de decisión
 
 **Idea en una frase:** una cadena de preguntas de "sí/no" que va partiendo los datos hasta llegar a una decisión.
 
@@ -184,7 +184,7 @@ modelo.fit(X_train, y_train)
 y_pred = modelo.predict(X_test)
 ```
 
-### 3.3.5 Random Forest (bosque aleatorio) — el primer "ensamble"
+### 2.3.5 Random Forest (bosque aleatorio) — el primer "ensamble"
 
 **Idea en una frase:** en vez de un árbol, construye **cientos de árboles distintos** y promedia sus votos.
 
@@ -203,7 +203,7 @@ modelo.fit(X_train, y_train)
 y_pred = modelo.predict(X_test)
 ```
 
-### 3.3.6 Gradient Boosting (y sus estrellas: XGBoost y LightGBM)
+### 2.3.6 Gradient Boosting (y sus estrellas: XGBoost y LightGBM)
 
 **Idea en una frase:** construye árboles **en serie**, donde cada árbol nuevo se dedica a corregir los errores del anterior.
 
@@ -232,7 +232,7 @@ modelo.fit(X_train, y_train)
 y_pred = modelo.predict(X_test)
 ```
 
-### 3.3.7 Máquinas de soporte vectorial (SVM)
+### 2.3.7 Máquinas de soporte vectorial (SVM)
 
 **Idea en una frase:** busca la frontera que separa las clases dejando **el mayor espacio posible** a cada lado.
 
@@ -251,7 +251,7 @@ modelo.fit(X_train, y_train)
 y_pred = modelo.predict(X_test)
 ```
 
-### 3.3.8 Naive Bayes
+### 2.3.8 Naive Bayes
 
 **Idea en una frase:** calcula probabilidades usando el teorema de Bayes y una suposición "ingenua" (*naive*): que las variables son independientes entre sí.
 
@@ -272,11 +272,11 @@ y_pred = modelo.predict(X_test)
 
 ---
 
-## 3.4 Los modelos no supervisados
+## 2.4 Los modelos no supervisados
 
 Aquí **no hay respuesta conocida**. No le decimos al modelo qué es correcto; le pedimos que **descubra estructura** por su cuenta. Dos tareas clave: **agrupar** (clustering) y **resumir variables** (reducción de dimensión).
 
-### 3.4.1 K-means (agrupamiento)
+### 2.4.1 K-means (agrupamiento)
 
 **Idea en una frase:** separa los datos en *k* grupos juntando lo que se parece.
 
@@ -295,7 +295,7 @@ modelo = KMeans(n_clusters=3, n_init=10, random_state=42)
 grupos = modelo.fit_predict(X)   # a qué grupo va cada punto
 ```
 
-### 3.4.2 Agrupamiento jerárquico
+### 2.4.2 Agrupamiento jerárquico
 
 **Idea en una frase:** arma un árbol de grupos, uniendo poco a poco lo más parecido.
 
@@ -311,7 +311,7 @@ modelo = AgglomerativeClustering(n_clusters=3)
 grupos = modelo.fit_predict(X)
 ```
 
-### 3.4.3 DBSCAN
+### 2.4.3 DBSCAN
 
 **Idea en una frase:** agrupa por **densidad**: los grupos son zonas donde hay muchos puntos juntos, y lo que queda aislado se marca como "ruido".
 
@@ -327,7 +327,7 @@ modelo = DBSCAN(eps=0.5, min_samples=5)
 grupos = modelo.fit_predict(X)   # el grupo -1 significa "ruido/atípico"
 ```
 
-### 3.4.4 PCA (análisis de componentes principales) — reducción de dimensión
+### 2.4.4 PCA (análisis de componentes principales) — reducción de dimensión
 
 **Idea en una frase:** resume muchas variables en unas pocas, perdiendo la menor información posible.
 
@@ -348,7 +348,7 @@ print(pca.explained_variance_ratio_.sum())        # cuánta información conserv
 
 ---
 
-## 3.5 Un vistazo (ligero) a las redes neuronales
+## 2.5 Un vistazo (ligero) a las redes neuronales
 
 No podemos cerrar un recorrido de modelos sin nombrar a las **redes neuronales**, el motor del *deep learning* y de la IA actual (incluidos los modelos de lenguaje). Aquí solo la **idea**; la profundidad queda para un módulo dedicado, porque entrenar redes grandes sí necesita hardware potente, y la regla de este curso es que todo corra en su portátil.
 
@@ -367,12 +367,12 @@ Para que vea que una red pequeña **también corre en su PC**, scikit-learn trae
 
 ---
 
-```{admonition} Sigue en el Módulo 3B
+```{admonition} Sigue en el Módulo 2B
 :class: tip
-Ya sabe qué hace cada modelo. En el **Módulo 3B** los ponemos lado a lado (ventajas y desventajas), aprendemos a elegir y vemos con qué librería de Python se programa cada cosa.
+Ya sabe qué hace cada modelo. En el **Módulo 2B** los ponemos lado a lado (ventajas y desventajas), aprendemos a elegir y vemos con qué librería de Python se programa cada cosa.
 ```
 
-## Referencias (Módulo 3A)
+## Referencias (Módulo 2A)
 
 Breiman, L. (2001). Random forests. *Machine Learning, 45*(1), 5–32. https://doi.org/10.1023/A:1010933404324
 

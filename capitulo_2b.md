@@ -10,7 +10,7 @@ kernelspec:
 
 ```{admonition} De dónde venimos
 :class: tip
-Esta parte continúa el **Módulo 3A**, donde definimos cada familia de modelos. Aquí los comparamos y conocemos las librerías. Se mantiene la regla didáctica: intuición primero, código al final, todo en un portátil normal.
+Esta parte continúa el **Módulo 2A**, donde definimos cada familia de modelos. Aquí los comparamos y conocemos las librerías. Se mantiene la regla didáctica: intuición primero, código al final, todo en un portátil normal.
 ```
 
 ```{admonition} Objetivos de aprendizaje (parte 2B)
@@ -24,7 +24,7 @@ Al terminar esta parte usted será capaz de:
 
 ---
 
-## 3.6 Comparación de modelos: ventajas y desventajas
+## 2.6 Comparación de modelos: ventajas y desventajas
 
 Esta es la tabla que más va a consultar en su vida profesional. Léala por filas (cada modelo) y por columnas (cada criterio).
 
@@ -117,7 +117,7 @@ Esta es la tabla que más va a consultar en su vida profesional. Léala por fila
 "Interpretable" = qué tan fácil es explicarle a un jefe, un auditor o un juez **por qué** el modelo decidió lo que decidió. En crédito, salud y sector público, la interpretabilidad **no es un lujo, es un requisito legal y ético**. A veces conviene sacrificar un poco de precisión por un modelo que se pueda explicar.
 ```
 
-### 3.6.1 ¿Cómo elijo? Un diagrama de decisión
+### 2.6.1 ¿Cómo elijo? Un diagrama de decisión
 
 No existe un "mejor modelo" universal (eso lo vimos en el Módulo 1 con el teorema *No Free Lunch*). Pero sí hay una ruta sensata para empezar:
 
@@ -141,7 +141,7 @@ flowchart TD
 
 ---
 
-## 3.7 Las librerías de Python: su caja de herramientas
+## 2.7 Las librerías de Python: su caja de herramientas
 
 Un modelo no vive solo: necesita cargar datos, limpiarlos, graficarlos y evaluarse. Cada tarea tiene su librería. Piense en ellas como las herramientas de un taller: cada una hace una cosa bien.
 
@@ -194,11 +194,11 @@ Una regresión lineal existe en ambas, pero `statsmodels` le entrega la tabla co
 
 ---
 
-## 3.8 Preparación del entorno (Colab y VS Code)
+## 2.8 Preparación del entorno (Colab y VS Code)
 
 Antes de los ejemplos, deje su entorno listo. Elija su camino.
 
-### 3.8.1 Google Colab (cero instalación)
+### 2.8.1 Google Colab (cero instalación)
 
 1. Entre a `colab.research.google.com` con su cuenta de Google.
 2. Cree un notebook nuevo. **Ya trae** NumPy, pandas, Matplotlib, seaborn y scikit-learn instalados.
@@ -214,7 +214,7 @@ Antes de los ejemplos, deje su entorno listo. Elija su camino.
 - **Límites del plan gratuito:** ~12 GB de RAM, CPU por defecto (la GPU T4 aparece *si hay disponible*, no garantizada), sesiones de hasta ~12 horas y desconexión por inactividad (~90 min). Para este curso sobra: nuestros datasets son diminutos.
 ```
 
-### 3.8.2 VS Code (en su propio PC)
+### 2.8.2 VS Code (en su propio PC)
 
 1. Instale **Python 3.11 o superior** y la extensión **Python** de Microsoft en VS Code (más la extensión **Jupyter**).
 2. Abra una terminal en la carpeta de su proyecto y cree un entorno virtual (así no desordena su sistema):
@@ -251,12 +251,12 @@ print("Matplotlib :", matplotlib.__version__)
 
 ---
 
-```{admonition} Sigue en el Módulo 3C
+```{admonition} Sigue en el Módulo 2C
 :class: tip
-Con el entorno listo y los modelos comparados, en el **Módulo 3C** pasamos a la práctica: ejemplos desarrollados que corren tal cual, plantillas para completar y ejercicios para Colab y VS Code.
+Con el entorno listo y los modelos comparados, en el **Módulo 2C** pasamos a la práctica: ejemplos desarrollados que corren tal cual, plantillas para completar y ejercicios para Colab y VS Code.
 ```
 
-## Referencias (Módulo 3B)
+## Referencias (Módulo 2B)
 
 Breiman, L. (2001). Statistical modeling: The two cultures. *Statistical Science, 16*(3), 199–231. https://doi.org/10.1214/ss/1009213726
 

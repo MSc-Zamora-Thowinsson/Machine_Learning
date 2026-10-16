@@ -10,7 +10,7 @@ kernelspec:
 
 ```{admonition} Antes de empezar
 :class: important
-Esta parte cierra el **Módulo 3** (viene de 2A y 2B). Para ejecutar los ejemplos necesita el entorno preparado en el **Módulo 3B, sección 3.8** (Colab o VS Code con scikit-learn, pandas, NumPy y Matplotlib). Todos los ejemplos usan datasets diminutos integrados en scikit-learn: corren en segundos, sin GPU y sin internet.
+Esta parte cierra el **Módulo 2** (viene de 2A y 2B). Para ejecutar los ejemplos necesita el entorno preparado en el **Módulo 2B, sección 2.8** (Colab o VS Code con scikit-learn, pandas, NumPy y Matplotlib). Todos los ejemplos usan datasets diminutos integrados en scikit-learn: corren en segundos, sin GPU y sin internet.
 ```
 
 ```{admonition} Objetivos de aprendizaje (parte 2C)
@@ -23,7 +23,7 @@ Al terminar esta parte usted será capaz de:
 
 ---
 
-## 3.9 Ejemplos DESARROLLADOS (listos para correr en clase)
+## 2.9 Ejemplos DESARROLLADOS (listos para correr en clase)
 
 Estos ejemplos **funcionan tal cual**, con datasets integrados (sin internet) y son pequeños (corren en segundos en cualquier portátil). Úselos para demostrar en vivo.
 
@@ -189,7 +189,7 @@ Esta red tiene **una capa oculta de 64 neuronas** y entrena en segundos. Es el m
 
 ---
 
-## 3.10 Ejemplos POR DESARROLLAR (esqueletos para el estudiante)
+## 2.10 Ejemplos POR DESARROLLAR (esqueletos para el estudiante)
 
 Estos **no están completos a propósito**. El estudiante rellena los `# TODO`. Son plantillas seguras (plain Python, no se ejecutan al construir el libro).
 
@@ -230,7 +230,7 @@ from sklearn.cluster import KMeans
 
 ---
 
-## 3.11 Ejercicios prácticos (Colab y VS Code)
+## 2.11 Ejercicios prácticos (Colab y VS Code)
 
 Cada ejercicio indica dónde hacerlo. Los marcados **"sin internet"** corren con datasets de scikit-learn; los de **datos abiertos de Colombia** requieren descargar un archivo (hágalos en casa, no en clase en vivo).
 
@@ -264,7 +264,7 @@ Un banco quiere un modelo para aprobar créditos. Su equipo logra 92 % de exacti
 
 ---
 
-## 3.12 Errores comunes (y cómo evitarlos)
+## 2.12 Errores comunes (y cómo evitarlos)
 
 ```{admonition} Los cinco tropiezos que más veremos en clase
 :class: warning
@@ -277,7 +277,7 @@ Un banco quiere un modelo para aprobar créditos. Su equipo logra 92 % de exacti
 
 ---
 
-## 3.13 Resumen del módulo
+## 2.13 Resumen del módulo
 
 - Un **modelo** es la regla aprendida de los datos; el **algoritmo** es la receta que la produce.
 - **Supervisado** (hay respuesta): modelos lineales, k-NN, árboles, ensambles (Random Forest, boosting), SVM y Naive Bayes. **No supervisado** (no hay respuesta): K-means, jerárquico, DBSCAN (agrupar) y PCA (resumir).
@@ -288,7 +288,7 @@ Un banco quiere un modelo para aprobar créditos. Su equipo logra 92 % de exacti
 
 ---
 
-## 3.14 Glosario
+## 2.14 Glosario
 
 ```{list-table}
 :header-rows: 1
@@ -322,7 +322,7 @@ Un banco quiere un modelo para aprobar créditos. Su equipo logra 92 % de exacti
 
 ---
 
-## 3.15 Autoevaluación
+## 2.15 Autoevaluación
 
 1. Con sus palabras: ¿cuál es la diferencia entre un algoritmo y un modelo?
 2. La regresión logística, ¿sirve para regresión o para clasificación? ¿Por qué el nombre confunde?
@@ -337,7 +337,7 @@ Un banco quiere un modelo para aprobar créditos. Su equipo logra 92 % de exacti
 
 ---
 
-## Referencias (Módulo 3C)
+## Referencias (Módulo 2C)
 
 Géron, A. (2022). *Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow* (3rd ed.). O'Reilly Media.
 
