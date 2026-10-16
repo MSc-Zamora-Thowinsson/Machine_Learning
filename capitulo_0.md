@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Antes de comenzar a desarrollar modelos de *Machine Learning*, es necesario disponer de un entorno de trabajo correctamente configurado. En este capítulo se prepararán las herramientas que utilizaremos durante el curso, procurando que los procedimientos sean reproducibles tanto en **Windows**, **macOS** y **Linux**.
+Antes de comenzar a desarrollar modelos de *Machine Learning*, es necesario disponer de un entorno de trabajo correctamente configurado. En este capítulo se prepararán las herramientas que utilizaremos durante el curso, procurando que los procedimientos sean reproducibles tanto en **Windows** como en **macOS** y **Linux**.
 
 El entorno estará basado principalmente en **Python**, utilizando **Conda** para la gestión de entornos y dependencias, **Visual Studio Code** como editor de desarrollo y **Jupyter** para la ejecución interactiva de código y análisis de datos.
 
@@ -42,7 +42,7 @@ Un estudio publicado en 2025 en la revista IEEE *Transactions on Parallel and Di
 
 #### El presente: Python como lengua franca de la IA
 
-Si hay un campo donde Python se ha vuelto absolutamente dominante, ese es la inteligencia artificial. El propio *Guido van Rossum* lo explicó con una idea sencilla: la gente que hoy escribe código para IA empezó en el aprendizaje automático (*Machine Learning*), y en ese mundo Python ya era el estándar[@venegas2026pythonia]. Cuando una tecnología alcanza una masa crítica de usuarios y bibliotecas, se vuelve cada vez más atractiva para nuevos proyectos, y eso refuerza su posición [@venegas2026pythonia]. Es un círculo virtuoso.
+Si hay un campo donde Python se ha vuelto absolutamente dominante, ese es la inteligencia artificial. El propio *Guido van Rossum* lo explicó con una idea sencilla: la gente que hoy escribe código para IA empezó en el aprendizaje automático (*Machine Learning*), y en ese mundo Python ya era el estándar [@venegas2026pythonia]. Cuando una tecnología alcanza una masa crítica de usuarios y bibliotecas, se vuelve cada vez más atractiva para nuevos proyectos, y eso refuerza su posición [@venegas2026pythonia]. Es un círculo virtuoso.
 
 Hoy, más del 80% de los profesionales de **machine learning** usan Python, respaldados por herramientas como `TensorFlow`, `PyTorch`, `scikit-learn` y todo el ecosistema de `Hugging Face`. El 71% de las ofertas de empleo para ingenieros de IA exigen conocimientos de Python. No es que sea el único lenguaje que sirve para IA, pero sí es el que tiene las bibliotecas más maduras, la documentación más completa y la comunidad más grande. Y eso, para quien empieza, marca una diferencia enorme.
 
@@ -89,7 +89,7 @@ A lo largo del libro se incorporarán progresivamente bibliotecas según áreas 
 | Tornado | Framework asíncrono | Aplicaciones en tiempo real |
 | Litestar | Framework ASGI | APIs y microservicios modernos |
 
-2. **Librerías de procesamiento de datos en python**
+2. **Librerías de procesamiento de datos en Python**
 
 - **Pandas:** Biblioteca especializada en la manipulación y análisis de datos mediante estructuras como Series y DataFrames. Consultar [pandas.pydata.org](https://pandas.pydata.org/)
   - **Uso principal:** Limpieza, transformación y análisis de datos tabulares.
@@ -119,7 +119,7 @@ A lo largo del libro se incorporarán progresivamente bibliotecas según áreas 
 - **Seaborn:** Biblioteca de visualización construida sobre Matplotlib que facilita la creación de gráficos estadísticos atractivos. Consultar [seaborn.pydata.org](https://seaborn.pydata.org/)
   - **Uso principal:** Análisis exploratorio de datos y visualizaciones estadísticas.
 
-- **Plotly:** Biblioteca para crear gráficos interactivos y dashboards dinámicos que pueden visualizarse en navegadores web. Consultar [ploty.com](https://plotly.com/python/) 
+- **Plotly:** Biblioteca para crear gráficos interactivos y dashboards dinámicos que pueden visualizarse en navegadores web. Consultar [plotly.com](https://plotly.com/python/) 
   - **Uso principal:** Visualizaciones interactivas, dashboards y análisis de datos en tiempo real.
 
 | **Resumen rápido** |  |  |
@@ -134,10 +134,10 @@ A lo largo del libro se incorporarán progresivamente bibliotecas según áreas 
 - **PyTorch:** Framework de aprendizaje profundo desarrollado por Meta que permite construir y entrenar redes neuronales de forma flexible. Consultar [pytorch.org](https://pytorch.org/)
   - **Uso principal:** Deep Learning, visión por computador y procesamiento de lenguaje natural.
 
-- **TensorFlow:** Framework de código abierto desarrollado por Google para construir modelos de Inteligencia Artificial y Machine Learning a gran escala. Consultar [tensoflow](https://www.tensorflow.org/?hl=es-419)
+- **TensorFlow:** Framework de código abierto desarrollado por Google para construir modelos de Inteligencia Artificial y Machine Learning a gran escala. Consultar [tensorflow](https://www.tensorflow.org/?hl=es-419)
   - **Uso principal:** Redes neuronales, Deep Learning y despliegue de modelos en producción.
 
-- **Keras:** Biblioteca de alto nivel para construir redes neuronales de forma sencilla. Actualmente se integra estrechamente con TensorFlow. Consultar [keras.oi](https://keras.io/)
+- **Keras:** Biblioteca de alto nivel para construir redes neuronales de forma sencilla. Actualmente se integra estrechamente con TensorFlow. Consultar [keras.io](https://keras.io/)
   - **Uso principal:** Desarrollo rápido y entrenamiento de modelos de Deep Learning.
 
 - **Scikit-Learn:** Biblioteca de Machine Learning que proporciona algoritmos para clasificación, regresión, agrupamiento y reducción de dimensionalidad. Consultar [scikit-learn.org](https://scikit-learn.org/stable/)
@@ -371,7 +371,7 @@ Este es el uso más común en el trabajo diario de modelado predictivo, estadís
 
 - **¿Qué lo compone?** La versión exacta del intérprete (como Python 3.10 o R 4.3) y las versiones específicas de todas las librerías necesarias para que tu código funcione (por ejemplo, XGBoost 2.0, CatBoost 1.2, pandas, Streamlit).
 
-- **¿Por qué es indispensable?** Previene conflictos de dependencias y garantiza la reproducibilidad. Asegura que un script que funciona en tu computadora hoy, funcionará exactamente igual en un servidor de producción o en la máquina de otro investigador mañana, sin que una actualización inesperada rompa el código.
+- **¿Por qué es indispensable?** Previene conflictos de dependencias y garantiza la reproducibilidad. Asegura que un script que funciona en tu computadora hoy funcionará exactamente igual en un servidor de producción o en la máquina de otro investigador mañana, sin que una actualización inesperada rompa el código.
 
 2. **Entorno en Aprendizaje por Refuerzo (Reinforcement Learning)**
 
@@ -453,15 +453,15 @@ En el caso de **Windows**, la gran mayoría de equipos de escritorio y portátil
 
 ![Ejecutar](images/windows-images/terminal/Ejecutar.png)
 
-![Power Shell Vacio](images/windows-images/terminal/Terminal-Vacio.png)
+![Power Shell Vacío](images/windows-images/terminal/Terminal-Vacio.png)
 
-Eecuta el siguiente comando:
+Ejecuta el siguiente comando:
 
 ````bash
 Get-CimInstance Win32_Processor | Select-Object Name, Architecture
 ````
 
-![Paso unico](images/windows-images/terminal/Terminal.png)
+![Paso único](images/windows-images/terminal/Terminal.png)
 
 El sistema te mostrará el modelo del procesador y su arquitectura:
 
@@ -475,11 +475,11 @@ Descargue desde su sitio oficial Miniconda y seleccione el instalador correspond
 
 #### Instalar Miniconda en Mac ![Logo Mac](images/images-svg/Apple-Logo.svg)
 
-1. Visita la página [de descarga de Miniconda](https://continuumio-docs.readthedocs-hosted.com/miniconda/install/#quick-command-line-install) y luego selecciona la **64-bit (Apple silicon) Graphical Installeropción** correspondiente. Se descargará un `.pkg`  instalador.
+1. Visita la página [de descarga de Miniconda](https://continuumio-docs.readthedocs-hosted.com/miniconda/install/#quick-command-line-install) y luego selecciona la **64-bit (Apple silicon) Graphical Installer opción** correspondiente. Se descargará un `.pkg`  instalador.
 
 ![Paso 1](images/mac-images/1.png)
 
-2. Una vez descargado, ejecute el instalador doble clic sobre él. Clic en *Continuar.*
+2. Una vez descargado, ejecute el instalador con doble clic sobre él. Clic en *Continuar.*
 
 ![Paso 2](images/mac-images/2.2.png)
 
@@ -499,7 +499,7 @@ Descargue desde su sitio oficial Miniconda y seleccione el instalador correspond
 
 ![Paso 6](images/mac-images/6.png)
 
-7. Ejecute el siguiente comando para aceptar los [Términos de Servicio (ToS)](https://www.anaconda.com/legal) de anaconda
+7. Ejecute el siguiente comando para aceptar los [Términos de Servicio (ToS)](https://www.anaconda.com/legal) de Anaconda
 
 ````bash
 conda tos accept
@@ -533,15 +533,15 @@ Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistem
 
 ![Paso 2](images/windows-images/2.png)
 
-3. Lee los términos de condiciones y haz clic en *Acepto* ellos.
+3. Lee los términos y condiciones y haz clic en *Acepto*.
 
 ![Paso 3](images/windows-images/3.png)
 
-4. Selecciona la opción *Just Me* (recomendado) para la instalación y Haz clic en *Siguiente*.
+4. Selecciona la opción *Just Me* (recomendado) para la instalación y haz clic en *Siguiente*.
 
 ![Paso 4](images/windows-images/4.png)
 
-5. Para elegir ubicación de instalación, puedes mantener el valor predeterminado directorio sugerido como la Carpeta de Destino. Haz clic en Siguiente
+5. Para elegir ubicación de instalación, puedes mantener el directorio predeterminado sugerido como la Carpeta de Destino. Haz clic en Siguiente
 
 >[!note]
 > Si tu nombre de usuario contiene espacios o caracteres especiales, algunos paquetes podrían presentar problemas. En ese caso, elige una ruta sencilla como `C:\miniconda3`.
@@ -560,7 +560,7 @@ Si ambos comandos se ejecutan correctamente, Conda está disponible en el sistem
 
 ![Paso 7](images/windows-images/7.png)
 
-8. Tu instalación está completa, pero necesitamos verificarla y Configura algunos ajustes. Abre un *nuevo prompt de Powershell de Anaconda* desde el menú de inicio.
+8. Tu instalación está completa, pero necesitamos verificarla y configurar algunos ajustes. Abre un *nuevo prompt de PowerShell de Anaconda* desde el menú de inicio.
 
 ![Paso 8](images/windows-images/8.png)
 
@@ -612,7 +612,7 @@ La Terminal deberá mostrar el nombre del entorno al comienzo de la línea:
 (ml_machine)
 ````
 
-Luego Compruebe la versión de Python:
+Luego compruebe la versión de Python:
 
 ````bash
 python --version
@@ -775,4 +775,4 @@ Antes de continuar con los siguientes capítulos, verifique que:
 - Visual Studio Code utiliza el intérprete correspondiente al entorno.
 - NumPy, pandas, Matplotlib y scikit-learn pueden importarse sin errores.
 
-Una vez superadas estas comprobaciones, el entorno de macOS estará preparado para desarrollar los ejercicios y proyectos de *Machine Learning* incluidos en este libro.
+Una vez superadas estas comprobaciones, el entorno de Windows o macOS estará preparado para desarrollar los ejercicios y proyectos de *Machine Learning* incluidos en este libro.
