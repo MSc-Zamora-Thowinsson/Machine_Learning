@@ -38,7 +38,7 @@ Esto no significa que "no se programe nada". Alguien diseña la representación 
 Arthur L. Samuel, investigador de IBM, publicó en 1959 el artículo *Some Studies in Machine Learning Using the Game of Checkers* en el *IBM Journal of Research and Development* (vol. 3, n.º 3, pp. 210–229).  Allí describió un programa que mejoraba su juego de damas a partir de la experiencia, y el artículo se reconoce como una de las primeras apariciones del término *machine learning*. 
 
 ```{warning}
-**Punto ciego frecuente.** En libros, cursos y sitios web circula la "definición de Samuel (1959)": *"Field of study that gives computers the ability to learn without being explicitly programmed"*. **Esa frase no aparece textualmente ni en el artículo de 1959 ni en su segunda versión de 1967.** Todo indica que es una paráfrasis posterior que condensa la idea del artículo. Si la usa, preséntela como paráfrasis atribuida, no como cita textual.
+**Punto ciego frecuente.** En libros, cursos y sitios web circula la "definición de Samuel (1959)": *"Field of study that gives computers the ability to learn without being explicitly programmed"* ("Campo de estudio que da a las computadoras la capacidad de aprender sin ser programadas explícitamente"; traducción propia). **Esa frase no aparece textualmente ni en el artículo de 1959 ni en su segunda versión de 1967.** Todo indica que es una paráfrasis posterior que condensa la idea del artículo. Si la usa, preséntela como paráfrasis atribuida, no como cita textual.
 
 Hay un segundo error recurrente: algunas fuentes citan el artículo como "IBM Journal 44(1.2)".  Ese volumen corresponde a una **reimpresión del año 2000**; la publicación original es el vol. 3, n.º 3 de 1959.
 ```
@@ -84,24 +84,32 @@ Kevin Murphy adopta esta misma definición como punto de partida en *Probabilist
 **Christopher Bishop (2006)**, *Pattern Recognition and Machine Learning*, abre el libro con una definición de reconocimiento de patrones que, en la práctica, funciona como definición de ML:
 
 > "The field of pattern recognition is concerned with the automatic discovery of regularities in data through the use of computer algorithms and with the use of these regularities to take actions such as classifying the data into different categories."
+>
+> (Traducción propia: "El campo del reconocimiento de patrones se ocupa del descubrimiento automático de regularidades en los datos mediante algoritmos computacionales y del uso de esas regularidades para emprender acciones, como clasificar los datos en diferentes categorías.")
 
 Es decir: descubrir regularidades **automáticamente**, con algoritmos, y **usarlas para actuar** (por ejemplo, clasificar).
 
 **Kevin Murphy (2012)**, *Machine Learning: A Probabilistic Perspective*, propone:
 
 > "[…] we can define machine learning as a set of methods that can automatically detect patterns in data, and then use the uncovered patterns to predict future data, or to perform other kinds of decision making under uncertainty."
+>
+> (Traducción propia: "[…] podemos definir el aprendizaje automático como un conjunto de métodos capaces de detectar automáticamente patrones en los datos y, luego, usar esos patrones descubiertos para predecir datos futuros o tomar otro tipo de decisiones en condiciones de incertidumbre.")
 
 Aquí aparece un matiz clave: la **incertidumbre**. El ML no promete certezas; produce predicciones y decisiones bajo incertidumbre, idealmente cuantificada.
 
-**Hastie, Tibshirani y Friedman (2009)**, *The Elements of Statistical Learning* (2.ª ed.), parten de la estadística: los datos se generan en enormes volúmenes y el trabajo del estadístico es "extraer patrones y tendencias importantes, y entender 'lo que dicen los datos'". Lo resumen en una frase: *"We call this learning from data"* ("A esto lo llamamos aprender de los datos").
+**Hastie, Tibshirani y Friedman (2009)**, *The Elements of Statistical Learning* (2.ª ed.), parten de la estadística: los datos se generan en enormes volúmenes y el trabajo del estadístico es "extraer patrones y tendencias importantes, y entender 'lo que dicen los datos'". Lo resumen en una frase: *"We call this learning from data"* ("A esto lo llamamos aprender de los datos"; traducción propia).
 
 **James, Witten, Hastie y Tibshirani (2021)**, *An Introduction to Statistical Learning* (2.ª ed.):
 
 > "Statistical learning refers to a vast set of tools for understanding data. These tools can be classified as supervised or unsupervised."
+>
+> (Traducción propia: "El aprendizaje estadístico se refiere a un amplio conjunto de herramientas para comprender los datos. Estas herramientas pueden clasificarse como supervisadas o no supervisadas.")
 
 **Goodfellow, Bengio y Courville (2016)**, *Deep Learning*, sitúan el ML dentro de la IA: los sistemas basados en conocimiento codificado a mano tienen límites, por lo que "los sistemas de IA necesitan la capacidad de adquirir su propio conocimiento, extrayendo patrones de datos en bruto. Esta capacidad se conoce como aprendizaje automático" (traducción propia del cap. 1). En el capítulo 5 añaden una caracterización muy honesta:
 
 > "Machine learning is essentially a form of applied statistics with increased emphasis on the use of computers to statistically estimate complicated functions and a decreased emphasis on proving confidence intervals around these functions."
+>
+> (Traducción propia: "El aprendizaje automático es, en esencia, una forma de estadística aplicada con mayor énfasis en el uso de computadoras para estimar estadísticamente funciones complicadas y menor énfasis en demostrar intervalos de confianza en torno a esas funciones.")
 
 ### 1.2.4 Síntesis
 
@@ -149,10 +157,10 @@ flowchart TB
 
 Leo Breiman, estadístico de Berkeley y creador de Random Forest, publicó en 2001 *Statistical Modeling: The Two Cultures* en *Statistical Science* (16(3), 199–231). Allí distingue dos formas de usar modelos para sacar conclusiones de los datos:
 
-1. **Cultura del modelado de datos (*data modeling*):** supone que los datos se generan por un modelo estocástico conocido (por ejemplo, $y = \beta_0 + \beta_1 x + \varepsilon$, con $\varepsilon \sim \mathcal{N}(0,\sigma^2)$) y estima sus parámetros. Breiman la describe así: "Estimated culture population. 98% of all statisticians" (población estimada: el **98 %** de todos los estadísticos).
-2. **Cultura del modelado algorítmico (*algorithmic modeling*):** trata el mecanismo generador como desconocido y busca una función $f(x)$ que prediga bien $y$, validada por su **exactitud predictiva** en datos nuevos. Su estimación textual es "2% of statisticians, many in other fields" (el **2 %** de los estadísticos, muchos de ellos en otros campos); esta es la cultura que hoy asociamos con el ML.
+1. **Cultura del modelado de datos (*data modeling*):** supone que los datos se generan por un modelo estocástico conocido (por ejemplo, $y = \beta_0 + \beta_1 x + \varepsilon$, con $\varepsilon \sim \mathcal{N}(0,\sigma^2)$) y estima sus parámetros. Breiman la describe así: "Estimated culture population. 98% of all statisticians" (población estimada: el **98 %** de todos los estadísticos; traducción propia).
+2. **Cultura del modelado algorítmico (*algorithmic modeling*):** trata el mecanismo generador como desconocido y busca una función $f(x)$ que prediga bien $y$, validada por su **exactitud predictiva** en datos nuevos. Su estimación textual es "2% of statisticians, many in other fields" (el **2 %** de los estadísticos, muchos de ellos en otros campos; traducción propia); esta es la cultura que hoy asociamos con el ML.
 
-Breiman sostuvo que la dependencia casi exclusiva de los modelos de datos "Led to irrelevant theory and questionable scientific conclusions" (condujo a teoría irrelevante y a conclusiones científicas cuestionables), y pidió adoptar "un conjunto más diverso de herramientas".
+Breiman sostuvo que la dependencia casi exclusiva de los modelos de datos "Led to irrelevant theory and questionable scientific conclusions" (condujo a teoría irrelevante y a conclusiones científicas cuestionables; traducción propia), y pidió adoptar "un conjunto más diverso de herramientas".
 
 ```{important}
 Para un científico de datos la lección no es "la predicción gana a la inferencia". Es que **la pregunta define el método**. Si necesita estimar el efecto causal de un subsidio sobre la deserción escolar, un Random Forest con buena exactitud no responde esa pregunta. Si necesita predecir qué estudiantes tienen alto riesgo de desertar para intervenir a tiempo, un modelo lineal "interpretable" pero mal especificado puede ser la peor opción. Los comentarios publicados con el artículo (D. R. Cox, B. Efron, entre otros) y los de su aniversario veinte muestran que el debate sigue abierto. 
@@ -184,7 +192,7 @@ Para un científico de datos la lección no es "la predicción gana a la inferen
 **Matiz histórico sobre la retropropagación.** El artículo de 1986 popularizó el método en redes neuronales, pero la idea de derivar gradientes en cadena de forma eficiente tiene antecedentes anteriores (p. ej., la diferenciación automática en modo inverso y trabajos de los años setenta). Conviene decir "popularizaron" y no "inventaron".
 ```
 
-Bommasani et al. (2021) definen un **modelo fundacional** como "any model that is trained on broad data (generally using self-supervision at scale) that can be adapted (e.g., fine-tuned) to a wide range of downstream tasks" ("cualquier modelo entrenado con datos amplios, generalmente mediante autosupervisión a escala, que puede adaptarse, p. ej. mediante ajuste fino, a una amplia gama de tareas posteriores"). Ponen como ejemplos BERT, GPT-3 y CLIP.
+Bommasani et al. (2021) definen un **modelo fundacional** como "any model that is trained on broad data (generally using self-supervision at scale) that can be adapted (e.g., fine-tuned) to a wide range of downstream tasks" ("cualquier modelo entrenado con datos amplios, generalmente mediante autosupervisión a escala, que puede adaptarse, p. ej. mediante ajuste fino, a una amplia gama de tareas posteriores"; traducción propia). Ponen como ejemplos BERT, GPT-3 y CLIP.
 
 ```{admonition} Lección de los inviernos de la IA
 :class: warning
